@@ -4,23 +4,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!-- <link rel="stylesheet" type="text/css" href="../css/login.css" /> -->
-<!-- <link rel="stylesheet" type="text/css" href="css/login.css" /> -->
-<!-- <link rel="stylesheet" type="text/css" href="/css/login.css" /> -->
-<!-- <link rel="stylesheet" type="text/css" href="/WEB-INF/css/login.css" /> -->
-<link rel="stylesheet" type="text/css" href="WEB-INF/css/login.css" />
 <title>Login</title>
 </head>
+<h2>In this application there are only three registered users.</h2>
+<p>Administrator: name - Alex; login - alex@mail.ru; password - admin</p>
+<p>User: name - Max; login - max@gmail.com; password - client</p>
+<p>User: name - Alexandra; login - krav@gmail.com; password - client</p>
+<p>Each user except the administrator can see only his claims. The administrator sees all the requests.</p>
+<br><br>
 <body>
 	<form method="GET" action="/main" class="login">
 	    <p>
-	      <label for="login">Логин:</label>
-	      <input type="text" name="login" id="login" value="name@example.com">
+	      <label for="login">Login:</label>
+	      <input type="text" name="login" id="login" placeholder="alex@mail.ru">
 	    </p>
 	
 	    <p>
-	      <label for="password">Пароль:</label>
-	      <input type="password" name="password" id="password" value="4815162342">
+	      <label for="password">Password:</label>
+	      <input type="password" name="password" id="password" placeholder="admin">
 	    </p>
 	
 	    <p class="login-submit">

@@ -8,7 +8,7 @@ public interface ClientService {
 	Client addClient(Client client);
     void delete(int id);
     Client getByID(int id);
-    Client getByLoginAndPassw(String login, String password);
     Client editClient(Client client);
     List<Client> getAll();
+    Client getByLoginAndPassw(String login, String password);
 }

@@ -2,9 +2,6 @@ package com.java.systemclaim.controller;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Enumeration;
 import java.util.List;
 import java.util.Map;
 
@@ -41,34 +38,6 @@ public class ClaimController {
 	
 	@RequestMapping(value={"/", "/login"}, method = RequestMethod.GET)
 	public ModelAndView login(){
-/*		Client client = new Client();
-		
-		Claim claim = new Claim();
-//		claim.setId(1);
-		claim.setRequest("Clean a room");
-		claim.setBid(12.5);
-		claim.setDueDate(new Date());
-		claim.setStatus("denied");
-		claim.setClient(client);
-		Claim claim2 = new Claim();
-//		claim2.setId(2);
-		claim2.setRequest("Clean a room2");
-		claim2.setBid(25);
-		claim2.setDueDate(new Date());
-		claim2.setStatus("denied");
-		claim2.setClient(client);
-		List<Claim> list = new ArrayList<>();
-		list.add(claim);
-		list.add(claim2);
-		
-//		client.setId(1);
-		client.setName("Nick");
-		client.setLogin("snvbel@mail.ru");
-		client.setPassword("snvnosnv");
-		client.setStatus("admin");
-		client.setClaims(list);
-		
-		clientService.addClient(client);*/
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.setViewName("login");
 		return modelAndView;

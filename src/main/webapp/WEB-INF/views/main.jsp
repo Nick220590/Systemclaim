@@ -37,12 +37,12 @@
 		<form method="POST" action="/clientRequestRegister">
 		    <p>
 		      <label for="request">Request:</label>
-		      <input type="text" name="request" id="request" >
+		      <input type="text" name="request" id="request" placeholder="Sell property">
 		    </p>
 		
 		    <p>
 		      <label for="bid">Bid:</label>
-		      <input type="text" name="bid" id="bid">
+		      <input type="text" name="bid" id="bid" placeholder="2.56">
 		    </p>
 		    
 		     <p>

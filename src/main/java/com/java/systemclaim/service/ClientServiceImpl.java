@@ -24,14 +24,19 @@ public class ClientServiceImpl implements ClientService {
 	@Override
 	@Transactional
 	public void delete(int id) {
-		// TODO Auto-generated method stub
-
+		
+	}
+	
+	@Override
+	@Transactional
+	public Client getByID(int id) {
+//		return clientRepository.getOne(id);
+		return clientRepository.findOne(id);
 	}
 
 	@Override
 	@Transactional
 	public Client editClient(Client client) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -46,12 +51,4 @@ public class ClientServiceImpl implements ClientService {
 	public Client getByLoginAndPassw(String login, String password) {
 		return clientRepository.findByLoginAndPassword(login, password);
 	}
-
-	@Override
-	@Transactional
-	public Client getByID(int id) {
-//		return clientRepository.getOne(id);
-		return clientRepository.findOne(id);
-	}
-
 }

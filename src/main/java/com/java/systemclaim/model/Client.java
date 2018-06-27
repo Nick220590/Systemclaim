@@ -88,14 +88,12 @@ public class Client implements Serializable {
 	public Claim addClaim(Claim claim) {
 		getClaims().add(claim);
 		claim.setClient(this);
-
 		return claim;
 	}
 
 	public Claim removeClaim(Claim claim) {
 		getClaims().remove(claim);
 		claim.setClient(null);
-
 		return claim;
 	}
 
